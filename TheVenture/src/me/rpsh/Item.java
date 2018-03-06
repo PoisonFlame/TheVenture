@@ -1,5 +1,6 @@
 package me.rpsh;
 
+<<<<<<< HEAD
 public class Item {
 
 	private String itemName;
@@ -68,7 +69,6 @@ public class Item {
 	public void setItemDef(int itemDef) {
 		this.itemDef = itemDef;
 	}
-	
 	
 	
 }

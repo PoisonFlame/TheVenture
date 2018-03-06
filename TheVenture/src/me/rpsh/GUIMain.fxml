@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" fx:controller="me.rpsh.MainController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="892.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblMap" alignment="CENTER" layoutX="1.0" layoutY="1.0" prefHeight="37.0" prefWidth="615.0" style="-fx-border-color: blue;" text="Map" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPlayerInfo" alignment="CENTER" layoutX="614.0" layoutY="1.0" prefHeight="37.0" prefWidth="278.0" style="-fx-border-color: blue;" text="Player Info" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgMap" fitHeight="435.0" fitWidth="615.0" layoutX="1.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/EXTRAS/tumblr_o54is70UYz1sbzhteo1_400.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblHealthLabel" layoutX="616.0" layoutY="59.0" text="Health: " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMoneyLabel" layoutX="616.0" layoutY="81.0" text="Money: $" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHealth" layoutX="684.0" layoutY="59.0" prefHeight="30.0" prefWidth="206.0" text="100 " textFill="#00ff11">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMoney" layoutX="698.0" layoutY="81.0" prefHeight="30.0" prefWidth="194.0" text="50,000 " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNameLabel" layoutX="616.0" layoutY="38.0" text="Name: " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="679.0" layoutY="38.0" prefHeight="30.0" prefWidth="206.0" text="Jenkins" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPlayerInventory" alignment="CENTER" layoutX="614.0" layoutY="152.0" prefHeight="37.0" prefWidth="278.0" style="-fx-border-color: blue;" text="Player Inventory" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstInventory" layoutX="616.0" layoutY="190.0" prefHeight="485.0" prefWidth="278.0" />
+      <TextArea fx:id="txtConsole" editable="false" layoutX="1.0" layoutY="448.0" prefHeight="203.0" prefWidth="615.0" promptText="Console Text" style="-fx-background-color: #333;" />
+      <TextField fx:id="txtInput" layoutX="1.0" layoutY="650.0" prefHeight="25.0" prefWidth="615.0" onAction="#onInputEnter" promptText="Input Here"/>
+      <Label fx:id="lblAttackDmgLabel" layoutX="616.0" layoutY="103.0" text="Attack Dmg: " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAttackDmg" layoutX="731.0" layoutY="103.0" text="1000" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDefenseLabel" layoutX="616.0" layoutY="126.0" text="Defense: " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDefense" layoutX="696.0" layoutY="126.0" text="500" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

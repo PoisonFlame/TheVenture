@@ -2,6 +2,7 @@ package me.rpsh;
 
 import java.util.List;
 
+
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -84,7 +85,13 @@ public class MainController {
 			txtConsole.appendText(introArray.get(i));
 		}
 
+		
+		
+		
 	}
+	
+
+	
 	
 	@FXML
 	public void onInputEnter(ActionEvent ae) {
@@ -126,7 +133,7 @@ public class MainController {
 				player = new Player(name.toString());
 				lblHealth.setText(player.health.getHealth() + "");
 				lblMoney.setText(player.money.getMoney() + "");
-				lstInventory.setItems((ObservableList<String>) player.items.getAllItems());
+				lstInventory.setItems((ObservableList<String>) player.items.getAllItemNames());
 				//ADD CRAP HERE TO MOVE TO NEXT ACTIVITYs
 				//DEAL WITH TrYING TO GET PLAYER.JAVA TO OUTPUT TO THE LABELS AFTER PLAYER CONSTRUCTOR.
 				return;

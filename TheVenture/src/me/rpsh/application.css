@@ -17,3 +17,18 @@
 	-fx-background-color: #5b5b5b;
 	
 }
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: #5b5b5b;
+    -fx-text-fill:white;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#141414 0%, #191919 25%, #1e1e1e 75%, #232323 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:odd {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+}

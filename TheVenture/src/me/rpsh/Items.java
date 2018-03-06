@@ -5,27 +5,41 @@ import javafx.collections.ObservableList;
 
 public class Items {
 
-	private ObservableList<String> itemList;
+	private ObservableList<Item> itemList;
+	private ObservableList<String> nameList;
 	
 	public Items() {
 		this.itemList = FXCollections.observableArrayList();
-		itemList.add("Basic Sword");
-		itemList.add("Basic Shield");
+		this.nameList = FXCollections.observableArrayList();
+		itemList.add(new Item("Basic Sword",0,5,0));
+		nameList.add("Basic Sword");
+		itemList.add(new Item("Basic Shield",0,0,5));
+		nameList.add("Basic Shield");
 	}
 	
-	public String getItem(int index) {
+	public Item getItem(int index) {
 		return itemList.get(index);
 	}
 	
-	public ObservableList<String> getAllItems(){
+	public ObservableList<Item> getAllItems(){
 		return itemList;
 	}
 	
-	public void addItem(String item) {
+	public void addItem(Item item) {
 		itemList.add(item);
+		nameList.add(item.getItemName());
 	}
 	
-	public void removeItem(String item) {
-		itemList.remove(item);
+	public ObservableList<String> getAllItemNames(){
+		return nameList;
+	}
+	
+	public void removeItem(int id) {
+		for(Item i : itemList) {
+			if(i.getItemID() == id) {
+			itemList.remove(i);
+			nameList.remove(i.getItemName());
+			}
+		}
 	}
 }
